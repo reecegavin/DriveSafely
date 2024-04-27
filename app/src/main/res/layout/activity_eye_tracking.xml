@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".EyeTracking">
+
+    <!--CardView used to hold object relating to speed-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/speedCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline11"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline10">
+
+        <!--TextView to show Speed heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Speed"
+            android:textSize="24dp" />
+
+        <!--ImageView to show Speed icon-->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_speed_24" />
+
+        <!--FrameLayout used to hold speed fragment-->
+        <FrameLayout
+            android:id="@id/fragmentSpeedo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <!--Relative layout to hold CardView and Buttons at bottom of screen-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomGuideeye">
+
+        <!--CardView to hold buttons for preview and Google Maps-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-8dp"
+            android:elevation="100dp"
+            app:cardCornerRadius="15dp">
+
+            <!--Table used to arrange buttons-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:background="#B2BEC3"
+                android:gravity="center|center_horizontal"
+                android:weightSum="2">
+
+                <!--ToggleButton used to turn preview on and off-->
+                <ToggleButton
+                    android:id="@+id/previewButton"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedeyes"
+                    android:checked="false"
+                    android:text="New ToggleButton"
+                    android:textColor="#ffff"
+                    android:textOff="@string/turn_preview_off"
+                    android:textSize="12dp" />
+
+                <!--Button used to open Google Maps-->
+                <Button
+                    android:id="@+id/mapButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedeyes"
+                    android:checked="false"
+                    android:text="Open Google Maps"
+                    android:textColor="#ffff"
+                    android:textSize="12dp" />
+
+            </TableRow>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <!--CardView used to hold object relating to journey time-->
+    <androidx.cardview.widget.CardView
+        android:id="@id/journeyCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline8"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline6">
+
+        <!--TextView to show Journey Timer heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Journey Timer"
+            android:textSize="24dp" />
+
+        <!--ImageView to show time icon-->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_timer_24" />
+
+        <!--Chronometer to show journey time-->
+        <Chronometer
+            android:id="@id/journeyTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/roboto_light"
+
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="24dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView used to hold object relating to distance-->
+    <androidx.cardview.widget.CardView
+        android:id="@id/DistanceCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline2">
+
+        <!--TextView to show Distance heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Distance"
+            android:textSize="24dp" />
+
+        <!--ImageView to show distance icon-->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_directions_car_24" />
+
+        <!--TextView used to display distance in km-->
+        <TextView
+            android:id="@id/distancemain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="0 km"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="24dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView used to hold object relating to detections-->
+    <androidx.cardview.widget.CardView
+        android:id="@id/DetectionsCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline15"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline14">
+
+        <!--TextView to show Detections heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Detections"
+            android:textSize="24dp" />
+
+        <!--ImageView to show detections icon-->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_tag_faces_24" />
+
+        <!--TextView used to show number of detections-->
+        <TextView
+            android:id="@id/detections_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="0"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="24dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView to hold DriveSafely Logo-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline12"
+        app:layout_constraintEnd_toStartOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline5">
+
+        <!--ImageView to hold DriveSafely logo-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_dark_text" />
+    </androidx.cardview.widget.CardView>
+
+    <!--Framelayout for camera preview-->
+    <FrameLayout
+        android:id="@+id/previewFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/guideline12"
+        app:layout_constraintEnd_toStartOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline5">
+
+        <!--CardView used to hold camera preview-->
+        <androidx.cardview.widget.CardView
+            android:id="@id/previewCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="100dp"
+            app:cardCornerRadius="10dp">
+
+            <!--Add camera source preview-->
+            <com.example.drivesafely.CameraSourcePreview
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Add grahpic overlay-->
+                <com.example.drivesafely.GraphicOverlay
+                    android:id="@+id/faceOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.example.drivesafely.CameraSourcePreview>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!--Guidelines used for constraint layout-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideeye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E9C9696"
+    tools:context=".Help">
+
+    <!--CardView to hold alarm delay slider text-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline2"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline1">
+
+        <!--TextView to display Alarm Delay Slider Heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:text="Alarm Delay Slider"
+            android:textColor="#020000"
+            android:textSize="20dp" />
+
+        <!--TextView to show info about alarm delay slider-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text="@string/alarm_slider" />
+    </androidx.cardview.widget.CardView>
+
+    <!--ImageView to show picture of alarm delay slider-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:src="@drawable/alarm"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline4"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline3" />
+
+    <!--CardView to hold alarm tone selector text-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline6"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline5">
+
+        <!--TextView to display Alarm Tone Selector Heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:text="Alarm Tone Selector"
+            android:textColor="#020000"
+            android:textSize="20dp" />
+
+        <!--TextView to show info about alarm tone selector-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text="@string/alarm_tone" />
+    </androidx.cardview.widget.CardView>
+
+    <!--ImageView to show picture of alarm tone selector-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/alarm_tone_"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline8"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline7"/>
+
+    <!--CardView to hold Contact Selector text-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline10"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline9">
+
+        <!--TextView to display Contact Selector Heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:text="Contact Selector"
+            android:textColor="#020000"
+            android:textSize="20dp" />
+
+        <!--TextView to show info about contact selector-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text="@string/contact_help" />
+    </androidx.cardview.widget.CardView>
+
+
+    <!--ImageView to show picture of contact selector-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:src="@drawable/contact"
+        app:layout_constraintBottom_toBottomOf="@id/horGuideline12"
+        app:layout_constraintEnd_toEndOf="@id/Vertguideline2"
+        app:layout_constraintStart_toStartOf="@id/Vertguideline"
+        app:layout_constraintTop_toTopOf="@id/horGuideline11" />
+
+
+    <!--Guidelines used to create the constraint layout-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Vertguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Vertguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horGuideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="redBG">#e74c3c</color>
+    <color name="blueCircle">#19b5fe</color>
+    <color name="yellowCircle">#eeee00</color>
+    <color name="greenCircle">#26a65b</color>
+    <color name="purpleCircle">#a537fd</color>
+
+
+    //Remove these when done not needed, from a youtube video
+
+
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="pink">#fe104d</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mapboxPink">#ee4e8b</color>
+    <color name="mapboxYellow">#d9d838</color>
+    <color name="mapboxRed">#b43b71</color>
+
+<!--    <color name="seek_bar_background">#ababab</color>-->
+    <color name="seek_bar_background">#19b5fe</color>
+    <color name="seek_bar_progress">#ffb600</color>
+
+    <color name="seek_bar_secondary_progress">#3399CC</color>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_place" type="id"></item>
+    <item name="location_frag_container" type="id" />
+    <item name="mapfragment" type="id" />
+    <item name="contactlist" type="id" />
+    <item name="fragmentSpeedo" type="id" />
+    <item name="settingscard1" type="id" />
+    <item name="previewCard" type="id" />
+    <item name="journeyCard" type="id" />
+    <item name="DistanceCard" type="id" />
+    <item name="fragment_distance" type="id" />
+    <item name="DetectionsCard" type="id" />
+    <item name="detections_text" type="id" />
+    <item name="distancemain" type="id" />
+    <item name="journeyTimer" type="id" />
+    <item name="timeTextOne" type="id" />
+    <item name="timeTextTwo" type="id" />
+    <item name="timeTextThree" type="id" />
+</resources>

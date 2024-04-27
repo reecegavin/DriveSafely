@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">DriveSafely</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Safely">Safely</string>
+    <string name="Drive">Drive</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="Camera_Access">Access to the camera is needed for detection</string>
+    <string name="SMS_access">Access to the SMS is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission. The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="ok">OK</string>
+
+
+    <string name="access_token" translatable="false">pk.eyJ1IjoiZHJpdmVzYWZlbHkiLCJhIjoiY2tqcHZ3ZDhjMnpwcDJzcW9wN3U3cDQ1eSJ9.cKjDI3WyG4alcyC90DKfug</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+
+    <string name="end">END</string>
+    <string name="status">STATUS:</string>
+    <string name="alarm_will_invoke_after">Alarm will invoke after:</string>
+    <string name="high">High</string>
+    <string name="medium_recommended">Medium(Recommended)</string>
+    <string name="low">Low</string>
+    <string name="turn_preview_off">Turn Preview Off</string>
+    <string name="start_navigation">Start navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_component_fragment_text" />
+    <string name="fragment_in_card_below" />
+    <string name="alarm_delay">Alarm Delay</string>
+    <string name="initial_speed" />
+    <string name="speedometer_view">Speedometer View</string>
+    <string name="Emergency_message">DRIVESAFELY APP: The sender of this message is detected as being extremely tired. Consider calling them to ensure they are safe. </string>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="alarm_slider">If the users eyes remain closed for the selected amount of time, a red alert alarm will be sounded.</string>
+    <string name="alarm_tone">This allows the user to select their desired sound for when the app detects they are falling asleep.</string>
+    <string name="contact_help">This allows the user to select an emergency contact. This contact will receive a text message each time a red alert alarm is invoked</string>
+
+
+</resources>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecentTrips">
+
+    <!--CardView used to show information for trip one-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tripOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizGuideline2"
+        app:layout_constraintEnd_toEndOf="@id/verGuideline2"
+        app:layout_constraintStart_toStartOf="@id/verGuideline1"
+        app:layout_constraintTop_toTopOf="@id/horizGuideline1">
+
+        <!--TextView used to display trip one heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Trip One"
+            android:textSize="24dp" />
+
+        <!--TextView used to display time heading for trip one -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Time"
+            android:textSize="18dp" />
+
+        <!--TextView used to display time value for trip one -->
+        <TextView
+            android:id="@id/timeTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display time icon for trip one -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="51dp"
+            android:src="@drawable/ic_baseline_timer_blue_24" />
+
+        <!--TextView used to display average speed heading for trip one -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Average Speed"
+            android:textSize="18dp" />
+
+        <!--TextView used to display average speed value for trip one -->
+        <TextView
+            android:id="@+id/speedTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display speed icon for trip one -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_speed_red_24" />
+
+        <!--TextView used to display distance heading for trip one -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Distance"
+            android:textSize="18dp" />
+
+        <!--TextView used to display distance value for trip one -->
+        <TextView
+            android:id="@+id/distanceTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="22dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display distance icon for trip one -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="105dp"
+            android:src="@drawable/ic_baseline_directions_car_orange_24" />
+
+        <!--TextView used to display detections heading for trip one -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="230dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Detections"
+            android:textSize="18dp" />
+
+        <!--ImageView used to display detections icon for trip one -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_tag_faces_pink_24" />
+
+        <!--TextView used to display detections value for trip one -->
+        <TextView
+            android:id="@+id/detectTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="270dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView used to show information for trip two-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tripTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizGuideline4"
+        app:layout_constraintEnd_toEndOf="@id/verGuideline2"
+        app:layout_constraintStart_toStartOf="@id/verGuideline1"
+        app:layout_constraintTop_toTopOf="@id/horizGuideline3">
+
+        <!--TextView used to display trip two heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Trip Two"
+            android:textSize="24dp" />
+
+        <!--TextView used to display time heading for trip two -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Time"
+            android:textSize="18dp" />
+
+        <!--TextView used to display time value for trip two -->
+        <TextView
+            android:id="@id/timeTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display time icon for trip two -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="51dp"
+            android:src="@drawable/ic_baseline_timer_blue_24" />
+
+        <!--TextView used to display average speed heading for trip two -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Average Speed"
+            android:textSize="18dp" />
+
+        <!--TextView used to display average speed value for trip two -->
+        <TextView
+            android:id="@+id/speedTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display speed icon for trip two -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_speed_red_24" />
+
+        <!--TextView used to display distance heading for trip two -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Distance"
+            android:textSize="18dp" />
+
+        <!--TextView used to display distance value for trip two -->
+        <TextView
+            android:id="@+id/distanceTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="22dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display distance icon for trip two -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="105dp"
+            android:src="@drawable/ic_baseline_directions_car_orange_24" />
+
+        <!--TextView used to display detections heading for trip two -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="230dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Detections"
+            android:textSize="18dp" />
+
+        <!--ImageView used to display detections icon for trip two -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_tag_faces_pink_24" />
+
+        <!--TextView used to display detections value for trip two -->
+        <TextView
+            android:id="@+id/detectTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="270dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView used to show information for trip three-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tripThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:elevation="50dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizguideline6"
+        app:layout_constraintEnd_toEndOf="@id/verGuideline2"
+        app:layout_constraintStart_toStartOf="@id/verGuideline1"
+        app:layout_constraintTop_toTopOf="@id/horizGuideline5">
+
+        <!--TextView used to display trip three heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Trip Three"
+            android:textSize="24dp" />
+
+        <!--TextView used to display time heading for trip three -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Time"
+            android:textSize="18dp" />
+
+        <!--TextView used to display time value for trip three -->
+        <TextView
+            android:id="@id/timeTextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display time icon for trip three -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="51dp"
+            android:src="@drawable/ic_baseline_timer_blue_24" />
+
+        <!--TextView used to display average speed heading for trip three-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Average Speed"
+            android:textSize="18dp" />
+
+        <!--TextView used to display average speed value for trip three -->
+        <TextView
+            android:id="@+id/speedTextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display speed icon for trip one -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_speed_red_24" />
+
+        <!--TextView used to display distance heading for trip three -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Distance"
+            android:textSize="18dp" />
+
+        <!--TextView used to diaply  distance value for trip three -->
+        <TextView
+            android:id="@+id/distanceTextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="22dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+        <!--ImageView used to display distance icon for trip three -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="105dp"
+            android:src="@drawable/ic_baseline_directions_car_orange_24" />
+
+        <!--TextView used to display detections heading for trip three -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="230dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Detections"
+            android:textSize="18dp" />
+
+        <!--ImageView used to display detections icon for trip three -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_baseline_tag_faces_pink_24" />
+
+        <!--TextView used to display detections value for trip three -->
+        <TextView
+            android:id="@+id/detectTextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="270dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text=""
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--Guidelines used to create constraint layout-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.075" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.675" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizguideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.925" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

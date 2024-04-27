@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <!--TextView to hold Settings Heading-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#3C3B3D"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/settingscard1"
+        app:layout_constraintEnd_toEndOf="@id/horizontalcard2"
+        app:layout_constraintStart_toStartOf="@id/horizontalcard1" />
+
+    <!--CardView for Alarm Delay-->
+    <androidx.cardview.widget.CardView
+        android:id="@id/settingscard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/verticalcard3"
+        app:layout_constraintLeft_toLeftOf="@id/horizontalcard1"
+        app:layout_constraintRight_toRightOf="@id/horizontalcard2"
+        app:layout_constraintTop_toTopOf="@id/verticalcard1">
+
+        <!--Seekbar to change alarm delay time-->
+        <SeekBar
+            android:id="@+id/seekBarSettings"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:max="2"
+            android:progress="1"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/seek_thumb" />
+
+        <!--TextView to display Alarm Delay text-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/alarm_delay"
+            android:textColor="#3C3B3D"
+            android:textSize="30sp" />
+
+        <!--TextView to display Alarm Delay value-->
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="3 Seconds"
+            android:textColor="#3C3B3D"
+            android:textSize="30sp" />
+
+        <!--ImageView to display time icon-->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_timer_24" />
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView for Alarm tone-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/verticalcard5"
+        app:layout_constraintLeft_toLeftOf="@id/horizontalcard1"
+        app:layout_constraintRight_toRightOf="@id/horizontalcard2"
+        app:layout_constraintTop_toTopOf="@id/verticalcard4">
+
+        <!--TextView to display Alarm Tone text-->
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Alarm Tone"
+            android:textColor="#3C3B3D"
+            android:textSize="30sp" />
+
+        <!--Spinner used to allow user to select alarm tone-->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/style_spinner"
+            android:padding="5dp" />
+
+        <!--ImageView to display tone icon-->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_music_note_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--CardView for Emergency contact-->
+    <androidx.cardview.widget.CardView
+        android:id="@id/contactlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/verticalcard7"
+        app:layout_constraintEnd_toStartOf="@id/horizontalcard2"
+        app:layout_constraintStart_toStartOf="@id/horizontalcard1"
+        app:layout_constraintTop_toBottomOf="@id/verticalcard6">
+
+        <!--TextView to display Emergency Contact text-->
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Emergency Contact"
+            android:textColor="#3C3B3D"
+            android:textSize="32sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--Guidelines used for constraint layout-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalcard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalcard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalcard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
